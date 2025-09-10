@@ -7,7 +7,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 llm = LLM(
     provider="google",
     model="gemini/gemini-1.5-flash",
-    api_key="AIzaSyA3FeYSioIDTLAADAk73jdCzRlHu20jqqw"  # ⚠️ Do NOT expose this key in real projects!
+    api_key="YOUR_API_KEY"  # ⚠️ Do NOT expose this key in real projects!
 )
 
 # Agent: Quiz Question Generator
@@ -77,3 +77,4 @@ if __name__ == "__main__":
     quiz_questions = run_quiz_generation_crew(document_path)
     if quiz_questions:
         print("\nGenerated Quiz Questions:\n", quiz_questions)
+
